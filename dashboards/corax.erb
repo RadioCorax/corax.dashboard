@@ -1,0 +1,39 @@
+<script type='text/javascript'>
+$(function() {
+  // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+  Dashing.widget_base_dimensions = [300, 350]
+  Dashing.numColumns = 6
+});
+</script>
+
+<% content_for :title do %>Corax Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/corax.png"></div>
+    </li>
+    <li data-row="1" data-col="2" data-sizex="5" data-sizey="1">
+      <div
+        data-id="stream_listener"
+        data-view="Graph"
+        data-title="Listeners"
+        data-moreinfo="Current stream listeners"
+        style="background-color: #12b0c5;" />
+    </li>
+    <li data-row="2" data-col="1" data-sizex="3" data-sizey="2">
+      <div
+        data-id="playlist_day"
+        data-view="Playlist"
+        data-title="Morgens ab 6"
+        data-moreinfo="mAirList playlist 'Morgens ab 6'" />
+    </li>
+    <li data-row="2" data-col="4" data-sizex="3" data-sizey="2">
+      <div
+        data-id="playlist_night"
+        data-view="Playlist"
+        data-title="Abends und Nachts"
+        data-moreinfo="mAirList playlist 'Abends und Nachts'"
+        style="background-color: #9c4274;" />
+    </li>
+  </ul>
+</div>
