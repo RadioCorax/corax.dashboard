@@ -33,9 +33,17 @@ div.widget-playlist {
   }
 
   .table-playlist {
+    tr:nth-child(even) {
+      background: rgba(255, 255, 255, 0.05);
+    }
     th, td {
-      padding: 5px 15px;
+      padding: 10px;
+    }
+    .title {
       text-align: left;
+    }
+    .time, .state {
+      text-align: right;
     }
   }
 }

@@ -4,7 +4,7 @@ require 'dotenv/load'
 require 'dashing'
 
 configure do
-  set :auth_token, 'YOUR_AUTH_TOKEN'
+  set :auth_token, ENV.fetch('AUTH_TOKEN')
   set :default_dashboard, 'corax'
 
   # See http://www.sinatrarb.com/intro.html > Available Template Languages on
