@@ -29,19 +29,24 @@ div.widget-playlist {
 
 
   &.large h3 {
-    font-size: 65px;
+    font-size: 45px;
   }
 
   .table-playlist {
+    font-size: 18px;
+
     tr:nth-child(even) {
       background: rgba(255, 255, 255, 0.05);
     }
+
     th, td {
-      padding: 10px;
+      padding: 8px;
     }
+
     .title {
       text-align: left;
     }
+
     .time, .state {
       text-align: right;
     }
