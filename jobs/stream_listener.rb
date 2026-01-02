@@ -5,7 +5,7 @@ require 'faraday'
 points = []
 
 SCHEDULER.every '1m' do
-  conn = Faraday.new(settings.icecast_url, requests: { timeout: 15 }) do |builder|
+  conn = Faraday.new(settings.icecast_url, request: { timeout: 15 }) do |builder|
     builder.response(:json)
     builder.response(:raise_error)
   end
