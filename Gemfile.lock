@@ -39,7 +39,7 @@ GEM
     prism (1.6.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (2.2.21)
+    rack (2.2.25)
     rack-protection (2.2.4)
       rack
     rainbow (3.1.1)
